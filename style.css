@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-image: url(/bg.jpg);
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sidebar {
+  background: black;
+  font-family: "Chivo Mono", monospace;
+  color: aliceblue;
+  width: 200px;
+  height: 100vh;
+  padding: 16px;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+}
+.sidebar nav {
+  padding: 0px;
+  margin-top: 30px;
+}
+.sidebar nav:hover {
+  color: #e5202b;}
+.sidebar nav li {
+  list-style: none;
+  padding: 30px;
+}
+.content {
+  margin-left: 40px;
+  width: 90vw;
+  height: 100vh;
+  /*background: yellow;*/
+}
+.container {
+  display: flex;
+}
+.btn {
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  background: #e5202b;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #e70b1694;
+}
+.btn:active {
+  background: #f5010e52;
+}
+.btn__icon {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+p {
+  font-family: "FF Din Pro", sans-serif;
+}
+.infoContainer {
+  /* background: #5520e5; */
+  height: 75vh;
+  width: 80vw;
+  padding: 30px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.devimg img {
+  height: 75vh;
+}
+.devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hello {
+  font-size: 75px;
+  font-family: "Comfortaa", cursive;
+}
+.name {
+  font-size: 50px;
+  font-family: "Prosto One", cursive;
+}
+.institution {
+  font-size: 35px;
+  font-family: "Comfortaa", cursive;
+}
+.click {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 141px;
+}
+.sidebar nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+.contactForm {
+  font-family: "Comfortaa", cursive;
+  padding: 0 40px;
+  padding-top: 144px;
+}
+.contactForm h1 {
+  font-family: "Prosto One", cursive;
+  padding-bottom: 20px;
+}
+.contactForm form div {
+  padding: 10px;
+  font-weight: 800;
+}
+.contactForm form div input {
+  font-family: "Comfortaa", cursive;
+  width: 20%;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-items: center;
+}
+.contactForm form div textarea {
+  font-family: "Comfortaa", cursive;
+  width: 20%;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-items: center;
+}
+.about p {
+  font-family: "Comfortaa", cursive;
+  margin: 20px;
+}
+.about h2 {
+  font-family: "Prosto One", cursive;
+}
+@media (max-width: 1160px) {
+  .devimg {
+    display: none;
+  }
+  /* .sidebar {
+    transform: translate(-250px, 10px);
+    position: absolute;
+  } */
+}
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+.cross {
+  position: absolute;
+  left: 168px;
+  margin-top: 10px;
+  width: 25px;
+}
+
+.sidebarGo {
+  transform: translate(-250px, 0px);
+  position: absolute;
+}
