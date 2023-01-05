@@ -7,7 +7,7 @@
   padding: 0;
 }
 .container {
-  background-image: url(/bg.jpg);
+  background-image: url(./bg.jpg);
   width: 100vw;
   height: 100vh;
 
